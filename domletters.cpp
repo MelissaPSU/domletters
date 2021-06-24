@@ -21,7 +21,6 @@ int main()
 		{
 			word += tolower(temp[i]);
 		}
-		cout << word <<" ";
 		domCount += findLetterCount(word);	
 		word.clear();
 	}
