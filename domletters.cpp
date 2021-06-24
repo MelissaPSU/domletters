@@ -23,11 +23,11 @@ int main()
 		{
 			word += tolower(temp[i]);
 		}
-		domCount += findLetterCount(word);	
+		domCount += findLetterCount(word);	//adds each word dom count to total
 		word.clear();
 	}
 
-	cout << "Total count = " <<domCount <<endl;
+	cout << "Total count = " <<domCount <<endl;     //outputs total dom letter count to screen
 
 	return 0;
 }
@@ -53,8 +53,8 @@ int findLetterCount(string word)
 			a = a - 97; 
 			letters[a] += 1;
 		}
-		else
-			return 0;
+		else				//if an invalid character is found, returns 0 for count
+			return 0;		//ignoring the rest of the word
 	}
 
 	for(int i = 0; i < 26; ++i)		//loops through letters array to find highest
