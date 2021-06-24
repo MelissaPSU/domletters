@@ -14,6 +14,7 @@ int main()
 	string word;					//holds word to be sent to letter count function
 	string temp;					//holds word temporarily before changing to lowercase
 	int domCount = 0;				//running total of dom letters
+	
 	while(cin >> temp)				//reads in a "word" at a time
 	{
 		int length = temp.length();		//holds word length
@@ -24,6 +25,7 @@ int main()
 		domCount += findLetterCount(word);	
 		word.clear();
 	}
+
 	cout << "Total count = " <<domCount <<endl;
 
 	return 0;
@@ -36,10 +38,12 @@ int main()
 int findLetterCount(string word)
 {
 	int letters[26]; 			//to keep track of each letter count
-	for(int i = 0; i < 26; ++i)		//sets all to zero to avoid messed up count
-		letters[i] = 0;
 	int count = 0;
 	int length = word.length();
+	
+	for(int i = 0; i < 26; ++i)		//sets all to zero to avoid messed up count
+		letters[i] = 0;
+	
 	for(int i=0; i < length; ++i)		//cycles through word, makes sure all valid characters 	
 	{					//then adds the letter count in letters array
 		if(word[i] > 96 && word[i] < 123)
