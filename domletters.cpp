@@ -35,7 +35,6 @@ int main()
 //returns the highest count otherwise
 int findLetterCount(string word)
 {
-	//ascii lower #97-122
 	int letters[26]; 			//to keep track of each letter count
 	for(int i = 0; i < 26; ++i)		//sets all to zero to avoid messed up count
 		letters[i] = 0;
