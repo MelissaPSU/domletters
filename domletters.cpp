@@ -13,6 +13,7 @@ int main()
 {
 	string word;					//holds word to be sent to letter count function
 	string temp;					//holds word temporarily before changing to lowercase
+
 	int domCount = 0;				//running total of dom letters
 	
 	while(cin >> temp)				//reads in a "word" at a time
