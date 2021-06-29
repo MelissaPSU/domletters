@@ -29,10 +29,6 @@ upper and lowercase letters as equivalent. Examples:
 
 ## Build and Run
 
-(*These instructions are for a compiled language like
-C++. For an interpreted language like Python, delete these
-instructions and use those below.*)
-
 To build the program, type `make`. This will use the file
 named `Makefile` to compile the program.
 
