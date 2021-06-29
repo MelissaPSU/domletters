@@ -1,4 +1,6 @@
-//This is the main driver program for the dominant letters counter program. It takes in the input file when ran and scans that text file to count all dominant letters, then outputs the total. 
+//This is the main driver program for the dominant letters counter program. It takes in the input file when ran 
+//and scans that text file to count all dominant letters, then outputs the total. 
+//Melissa Barnes, June 2021
 
 #include<iostream>
 #include<fstream>
